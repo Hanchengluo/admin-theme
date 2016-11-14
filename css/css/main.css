@@ -861,3 +861,9 @@ template {
 .col-md-offset-0 {
   margin-left: 0;
 }
+.icon-poptit {
+  background: url('../../images/icons/ic-poptit.png') no-repeat center center;
+}
+.panel-tool-close {
+  background: url('../../images/icons/ic-popclose.png') no-repeat center center !important;
+}
