@@ -541,34 +541,34 @@ a.text-danger:hover {
 }
 .bg-primary {
   color: #fff;
-  background-color: #428bca;
+  background-color: #00b9e5;
 }
 a.bg-primary:hover {
-  background-color: #3071a9;
+  background-color: #00a4cc;
 }
 .bg-success {
-  background-color: #dff0d8;
+  background-color: #26d192;
 }
 a.bg-success:hover {
-  background-color: #c1e2b3;
+  background-color: #22bb83;
 }
 .bg-info {
-  background-color: #d9edf7;
+  background-color: #0073dd;
 }
 a.bg-info:hover {
   background-color: #afd9ee;
 }
 .bg-warning {
-  background-color: #fcf8e3;
+  background-color: #fe9003;
 }
 a.bg-warning:hover {
-  background-color: #f7ecb5;
+  background-color: #e78201;
 }
 .bg-danger {
-  background-color: #f2dede;
+  background-color: #ea7758;
 }
 a.bg-danger:hover {
-  background-color: #e4b9b9;
+  background-color: #e76541;
 }
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -2404,4 +2404,143 @@ select[multiple].form-group-lg .form-control {
   height: 32px;
   opacity: 0;
   z-index: 999;
+}
+.navbar {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.navbar-default {
+  background-color: #26d192;
+  border-color: #22bb83;
+  border-bottom: #268e6b solid 2px;
+}
+.navbar-default .navbar-brand {
+  color: #777;
+  background: url("../../images/icon-header-xian.png") right center no-repeat;
+}
+.navbar-brand {
+  float: left;
+  height: 66px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 42px;
+}
+.navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.navbar-collapse.collapse {
+  display: block!important;
+  height: auto!important;
+  padding-bottom: 0;
+  overflow: visible!important;
+  visibility: visible!important;
+}
+.nav {
+  display: inline-block;
+  float: left;
+}
+.navbar-nav > li {
+  display: inline-block;
+  float: left;
+  text-align: center;
+  margin: 21px 6px;
+  padding: 6px 10px;
+}
+.navbar-nav > li > a {
+  display: block;
+  color: #fff;
+  text-decoration: blink;
+  font-size: 14px;
+}
+.navbar-nav > li.active,
+.navbar-nav > li:hover {
+  background: #23AF7A;
+  box-shadow: #00e28f 2px 0 5px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.navbar-nav.navbar-user > li {
+  margin: 16px 0 16px 4px;
+}
+.navbar-nav.navbar-user > li.active,
+.navbar-nav.navbar-user > li:hover {
+  background: none !important;
+  box-shadow: none !important;
+  opacity: 0.8;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.navbar-nav.navbar-user .user-img {
+  margin: 5px 0;
+  padding: 6px 0;
+}
+.navbar-nav.navbar-user .exit {
+  margin: 16px;
+  background: url("../../images/icon-header-xian.png") left center no-repeat;
+}
+.navbar-nav.navbar-user .exit:hover {
+  opacity: 0.8;
+  background: url("../../images/icon-header-xian.png") left center no-repeat !important;
+}
+.navbar-right {
+  float: right!important;
+  margin-right: -15px;
+}
+.navbar-right .thumbnail {
+  display: block;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 48px;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+  overflow: hidden;
+  width: 48px;
+  height: 48px;
+  border: #fff solid 2px;
+}
+.navbar-right .thumbnail img {
+  max-width: 100%;
+}
+.navbar-right a.thumbnail:hover,
+.navbar-right a.thumbnail:focus,
+.navbar-right a.thumbnail.active {
+  border-color: #268e6b;
+}
+.navbar-menu-down > .m-btn-plain-active,
+.navbar-menu-down .s-btn-plain-active {
+  border-color: #23AF7A;
+  background-color: #23AF7A;
+  color: #fff;
+  border-radius: 2px;
+}
+.navbar-menu-down .l-btn-text {
+  font-size: 14px;
+}
+.navbar-menu-order {
+  background: url("../../images/icon-header-xian.png") left center no-repeat;
+}
+.navbar-menu-list {
+  background-color: #23AF7A !important;
+  border-color: #23AF7A !important;
+}
+.navbar-menu-list > .menu-line {
+  display: none;
+}
+.navbar-menu-list .menu-item a {
+  color: #fff;
+}
+.navbar-menu-list .menu-active {
+  border-color: #268E6B;
+  color: #FFFFFF;
+  background: #268E6B;
 }
