@@ -596,6 +596,12 @@ html {
  */
 body {
   margin: 0;
+  background: #ebeef0;
+}
+html,
+body,
+.body-box {
+  height: 100%;
 }
 /**
  * Add the correct display in IE 9-.
@@ -2543,4 +2549,101 @@ select[multiple].form-group-lg .form-control {
   border-color: #268E6B;
   color: #FFFFFF;
   background: #268E6B;
+}
+.sidemenu-left .tree-node {
+  height: 26px;
+  border-left: 2px #fff solid;
+}
+.sidemenu-left .tree-title {
+  height: 26px;
+  line-height: 26px;
+}
+.sidemenu-left .tree-node-selected,
+.sidemenu-left .tree-node-hover {
+  background: #F2F2F2;
+  color: #000000;
+  border-left: 2px #26D192 solid;
+}
+.tree-expanded,
+.tree-collapsed,
+.tree-folder,
+.tree-file,
+.tree-checkbox,
+.tree-indent {
+  margin-top: 4px;
+}
+.scrollbar {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 5px;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F5F5F5;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #FFF;
+  background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#26d192), to(#26d192), color-stop(0.6, #26d192));
+}
+#body-layout .panel-header,
+#body-layout .panel-body {
+  border-color: #ddd;
+}
+#body-layout .panel-header {
+  background: #fff;
+  padding: 10px 5px;
+}
+#body-layout .panel-header .panel-title {
+  color: #474a54;
+}
+#body-layout .accordion-header-selected .panel-title {
+  color: #26d192;
+}
+#body-layout .easyui-accordion {
+  border: none;
+}
+#body-layout .layout-expand .panel-body {
+  background: #26D192;
+}
+#body-layout .body-content.panel-body {
+  border: none;
+}
+.body-content .panel-body {
+  border: none;
+}
+.tab-box .tabs-header {
+  background: none;
+}
+.tab-box .tabs li {
+  margin: 0 4px -2px 0;
+}
+.tab-box .tabs li a.tabs-inner {
+  border-top: 2px #f4c014 solid;
+  border-radius: 3px 3px 0 0;
+  background: #fff !important;
+  color: #474a54;
+}
+.tab-box .tabs .tabs-selected a.tabs-inner {
+  border-top: 2px #26D192 solid;
+  border-bottom: #FFF solid 1px;
+}
+.tabs-scroller-left,
+.tabs-scroller-right,
+.tabs-tool,
+.tabs,
+.tabs-panels,
+.tabs li a.tabs-inner,
+.tabs li.tabs-selected a.tabs-inner,
+.tabs-header-bottom .tabs li.tabs-selected a.tabs-inner,
+.tabs-header-left .tabs li.tabs-selected a.tabs-inner,
+.tabs-header-right .tabs li.tabs-selected a.tabs-inner {
+  border-color: #ddd;
+}
+.tabs-header {
+  border-color: #fff;
 }
