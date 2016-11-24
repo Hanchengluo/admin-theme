@@ -11,77 +11,143 @@
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
 <body>
-    <div class="container">
-        <div id="body-layout" class="easyui-layout" style="width:100%;height:350px;">
-            <div data-options="region:'west',split:true" title="目录导航" style="width:220px;">
-                <div id="" class="easyui-accordion" style="width:212px;">
-                    <div title="Tree Menu">
+    <div class="body-box">
+        <div id="body-layout" class="easyui-layout" style="width:100%;height:100%;">
+            <div data-options="region:'west',split:true" title="目录导航" style="width:180px;"  class="scrollbar">
+                <div id="" class="easyui-accordion sidemenu-left" style="width:172px;">
+                    <div title="老人信息管理">
                         <ul id="tt1" class="easyui-tree">
-                            <li>
-                                <span>Folder1</span>
+                            <li class="menu-list">
+                                <span>老人明细服务</span>
                                 <ul>
                                     <li>
-                                        <span>Sub Folder 1</span>
-                                        <ul>
-                                            <li>
-                                                <span>File 11</span>
-                                            </li>
-                                            <li>
-                                                <span>File 12</span>
-                                            </li>
-                                            <li>
-                                                <span>File 13</span>
-                                            </li>
-                                        </ul>
+                                        <span>待完成</span>
                                     </li>
                                     <li>
-                                        <span>File 2</span>
+                                        <span>已催办</span>
+                                            </li>
+                                    <li>
+                                        <span>已完成</span>
                                     </li>
                                     <li>
-                                        <span>File 3</span>
+                                        <span>已评价</span>
+                                    </li>
+                                    <li>
+                                        <span>取消待审核</span>
+                                    </li>
+                                    <li>
+                                        <span>已取消</span>
                                     </li>
                                 </ul>
                             </li>
-                            <li>
-                                <span>File2</span>
+                            <li class="menu-list">
+                                <span>老人护理登记更换记录</span>
                             </li>
                         </ul>
                     </div>
-                    <div title="Tree Menu">
+                    <div title="老人日常记录管理">
                         <ul id="tt1" class="easyui-tree">
                             <li>
-                                <span>Folder1</span>
-                                <ul>
-                                    <li>
-                                        <span>Sub Folder 1</span>
-                                        <ul>
-                                            <li>
-                                                <span>File 11</span>
-                                            </li>
-                                            <li>
-                                                <span>File 12</span>
-                                            </li>
-                                            <li>
-                                                <span>File 13</span>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <span>File 2</span>
-                                    </li>
-                                    <li>
-                                        <span>File 3</span>
-                                    </li>
-                                </ul>
+                                <span>来访登记</span>
                             </li>
                             <li>
-                                <span>File2</span>
+                                <span>能力评估</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div title="老人日常记录管理">
+                        <ul id="tt1" class="easyui-tree">
+                            <li>
+                                <span>来访登记</span>
+                            </li>
+                            <li>
+                                <span>能力评估</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div title="老人日常记录管理">
+                        <ul id="tt1" class="easyui-tree">
+                            <li>
+                                <span>来访登记</span>
+                            </li>
+                            <li>
+                                <span>能力评估</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div title="老人日常记录管理">
+                        <ul id="tt1" class="easyui-tree">
+                            <li>
+                                <span>来访登记</span>
+                            </li>
+                            <li>
+                                <span>能力评估</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div title="老人日常记录管理">
+                        <ul id="tt1" class="easyui-tree">
+                            <li>
+                                <span>来访登记</span>
+                            </li>
+                            <li>
+                                <span>能力评估</span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div data-options="region:'center'">1</div>
+            <div data-options="region:'center'" class="body-content body-box" style="margin-top: 10px;">
+                <div class="easyui-tabs tab-colour" style="width:100%;height:100%;">
+                    <div title="系统桌面" style="padding:10px">
+                        <p style="font-size:14px">通过.tab-box 来控制easyui默认的边线问题</p>
+                        <ul>
+                            <li>easyui is a collection of user-interface plugin based on jQuery.</li>
+                            <li>easyui provides essential functionality for building modem, interactive, javascript  applications.</li>
+                            <li>using easyui you don't need to write many javascript code, you usually defines user-interface by writing some HTML markup.</li>
+                            <li>complete framework for HTML5 web page.</li>
+                            <li>easyui save your time and scales while developing your products.</li>
+                            <li>easyui is very easy but powerful.</li>
+                        </ul>
+                    </div>
+                    <div title="栅格布局" data-options="closable:true" style="padding:10px" class="body-box">
+                        <iframe src="grid.html" width="100%" height="100%">
+                        </iframe>
+                    </div>
+                    <div title="表格" data-options="closable:true" style="padding:10px" class="body-box">
+                        <iframe src="table.html" width="100%" height="100%">
+                        </iframe>
+                    </div>
+                    <div title="按钮" data-options="closable:true" style="padding:10px" class="body-box">
+                        <iframe src="button.html" width="100%" height="100%">
+                        </iframe>
+                    </div>
+                    <div title="输入表单" data-options="closable:true" style="padding:10px" class="body-box">
+                        <iframe src="input.html" width="100%" height="100%">
+                        </iframe>
+                    </div>
+                    <div title="徽章" data-options="closable:true"  style="padding:10px" class="body-box">
+                        <iframe src="badge.html" width="100%" height="100%">
+                        </iframe>
+                    </div>
+                    <div title="文本排版" data-options="closable:true"  style="padding:10px" class="body-box">
+                        <iframe src="text.html" width="100%" height="100%">
+                        </iframe>
+                    </div>
+                    <div title="文本标签" data-options="closable:true" style="padding:10px" class="body-box">
+                        <iframe src="label.html" width="100%" height="100%">
+                        </iframe>
+                    </div>
+                    <div title="切换" data-options="closable:true"  style="padding:10px" class="body-box">
+                        <iframe src="tabs.html" width="100%" height="100%">
+                        </iframe>
+                    </div>
+                    <div title="导航" data-options="closable:true" style="padding:10px" class="body-box">
+                        <iframe src="nav.html" width="100%" height="100%">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
