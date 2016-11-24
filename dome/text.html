@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本排版</title>
+    <link rel="stylesheet" type="text/css" href="../themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/css/easyui-demo.css">
+    <link rel="stylesheet" href="../css/css/main.css">
+    <link rel="stylesheet" href="dome.css"></head>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="page-header">文本排版</h1>
+            <h3>注意事项</h3>
+            <p class="explain">
+            <code>对应的区域建议使用对应的配置文本格式，避免不必要的文本格式、字体大小、字体对其方式出现排版问题</code></p>
+            <h3>标题</h3>
+            <p class="explain">
+                1、HTML 中的所有标题标签，<code>&lt;h1&gt;</code> 到 <code>&lt;h6&gt;</code> 均可使用。另外，还提供了 <code>.h1</code> 到 <code>.h6</code> 类，为的是给内联（inline）属性的文本赋予标题的样式。
+                <br>
+                2、在标题内还可以包含 <code>&lt;small&gt;</code> 标签或赋予 <code>.small</code> 类的元素，可以用来标记副标题。
+            </p>
+            <h1>h1. 文章的标题 <small>二级的标题</small></h1>
+            <hr class="border">
+            <h2>h2. 文章的标题 <small>二级的标题</small></h2>
+            <hr class="border">
+            <h3>h3. 文章的标题 <small>二级的标题</small></h3>
+            <hr class="border">
+            <h4>h4. 文章的标题 <small>二级的标题</small></h4>
+            <hr class="border">
+            <h5>h5. 文章的标题 <small>二级的标题</small></h5>
+            <hr class="border">
+            <h6>h6. 文章的标题 <small>二级的标题</small></h6>
+            <div class="highlight"><pre><code class="html"><span class="nt">&lt;h1&gt;</span>h1. 文章的标题 <span class="nt">&lt;small&gt;</span>二级的标题<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span><br>
+            <span class="nt">&lt;h2&gt;</span>h2. 文章的标题 <span class="nt">&lt;small&gt;</span>二级的标题<span class="nt">&lt;/small&gt;&lt;/h2&gt;</span><br>
+            <span class="nt">&lt;h3&gt;</span>h3. 文章的标题 <span class="nt">&lt;small&gt;</span>二级的标题<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span><br>
+            <span class="nt">&lt;h4&gt;</span>h4. 文章的标题 <span class="nt">&lt;small&gt;</span>二级的标题<span class="nt">&lt;/small&gt;&lt;/h4&gt;</span><br>
+            <span class="nt">&lt;h5&gt;</span>h5. 文章的标题 <span class="nt">&lt;small&gt;</span>二级的标题<span class="nt">&lt;/small&gt;&lt;/h5&gt;</span><br>
+            <span class="nt">&lt;h6&gt;</span>h6. 文章的标题 <span class="nt">&lt;small&gt;</span>二级的标题<span class="nt">&lt;/small&gt;&lt;/h6&gt;</span><br>
+            </code></pre></div>
+            <h3>对齐</h3>
+            <p class="explain">
+                通过文本对齐类，可以简单方便的将文字重新对齐。
+                <br>
+                文本左对齐：<code>.text-left</code>
+                <br>
+                文本居中对齐：<code>.text-center</code>
+                <br>
+                文本右对齐：<code>.text-right</code>
+                <br>
+                文本两端对齐：<code>.text-justify</code>
+                <br>
+                文本强制一行显示：<code>.text-nowrap</code>
+            </p>
+            <p class="text-left" style="padding: 10px 0;">文本左对齐：.text-left </p>
+            <hr class="border">
+            <p class="text-center" style="padding: 10px 0;">文本居中对齐：.text-center </p>
+            <hr class="border">
+            <p class="text-right" style="padding: 10px 0;">文本右对齐：.text-right</p>
+            <hr class="border">
+            <p class="text-justify" style="padding: 10px 0;">文本两端对齐：.text-justify </p>
+            <hr class="border">
+            <p class="text-nowrap" style="padding: 10px 0;">文本强制一行显示：.text-nowrap</p>
+            <hr class="border">
+            <div class="highlight"><pre><code class="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-left"</span><span class="nt">&gt;</span>文本左对齐：.text-left<span class="nt">&lt;/p&gt;</span><br>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>文本居中对齐：.text-center<span class="nt">&lt;/p&gt;</span><br>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>文本右对齐：.text-right<span class="nt">&lt;/p&gt;</span><br>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-justify"</span><span class="nt">&gt;</span>文本两端对齐：.text-justify<span class="nt">&lt;/p&gt;</span><br>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-nowrap"</span><span class="nt">&gt;</span>文本强制一行显示：.text-nowrap<span class="nt">&lt;/p&gt;</span><br>
+            </code></pre></div>
+            <h3>边线</h3>
+            <p class="explain">
+                通过对<code>&lt;hr&gt;</code>添加<code>.border</code>添加独立的横边线
+                <br>
+                文本左对齐：<code>.text-left</code>
+                <br>
+                文本居中对齐：<code>.text-center</code>
+                <br>
+                文本右对齐：<code>.text-right</code>
+                <br>
+                文本两端对齐：<code>.text-justify</code>
+                <br>
+                文本强制一行显示：<code>.text-nowrap</code>
+            </p>
+            <hr class="border">
+            <p class="border-all" style="padding: 10px 0;">这个四边都是边线</p><br>
+            <p class="border-top" style="padding: 10px 0;">这个上边都是边线</p><br>
+            <p class="border-right" style="padding: 10px 0;">这个右边都是边线</p><br>
+            <p class="border-bottom" style="padding: 10px 0;">这个下边都是边线</p><br>
+            <p class="border-left" style="padding: 10px 0;">这个左边都是边线</p><br>
+            <div class="highlight"><pre><code class="html"><span class="nt">&lt;hr</span> <span class="na">class=</span><span class="s">"border"</span><span class="nt">&gt;</span><br>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"border-all"</span><span class="nt">&gt;</span>这个四边都是边线<span class="nt">&lt;/p&gt;</span><br>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"border-top"</span><span class="nt">&gt;</span>这个上边都是边线<span class="nt">&lt;/p&gt;</span><br>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"border-right"</span><span class="nt">&gt;</span>这个右边都是边线<span class="nt">&lt;/p&gt;</span><br>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;</span>这个下边都是边线<span class="nt">&lt;/p&gt;</span><br>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"border-left"</span><span class="nt">&gt;</span>这个左边都是边线<span class="nt">&lt;/p&gt;</span><br>
+            </code></pre></div>
+            <h3>文本裁剪</h3>
+            <p class="explain">
+                通过对标签添加<code>.text-horizontal</code>对文本进行溢出的时候裁剪
+                <br>
+                <br>
+                <code>注意事项：必须对要裁剪的文本标签给出宽度（默认宽度为元素的宽度），</code>
+            </p>
+            <div class="row">
+                <div class="col-md-4">
+                <p class="text-horizontal" style="padding:10px">
+                听说他会自己裁剪超出的文字长度长度长度长度</p></div>
+                <div class="col-md-8"></div>
+            </div>
+            <div class="highlight"><pre><code class="html">
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-horizontal"</span><span class="nt">&gt;</span>听说他会自己裁剪超出的文字长度长度长度长度<span class="nt">&lt;/p&gt;</span><br>
+            </code></pre></div>
+            <h3>左右浮动</h3>
+            <p class="explain">
+                通过对标签添加<code>.pull-left</code>(左浮动)、<code>.pull-right</code>（右浮动）对元素进行左右浮动布局
+                <br>
+                <br>
+                <code>注意事项：必须对使用了左右浮动的元素的直接父级元素添加.clearfix的class类进行清除浮动，否则将影响到其他元素的正常布局方式</code>
+            </p>
+            <br>
+            <div class="clearfix">
+                <div class="pull-left">左浮动</div>
+                <div class="pull-right">右浮动</div>
+            </div>
+            <br>
+            <div class="highlight"><pre><code class="html">
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"clearfix"</span><span class="nt">&gt;</span><br>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pull-left"</span><span class="nt">&gt;</span>左浮动<span class="nt">&lt;/div&gt;</span><br>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pull-right"</span><span class="nt">&gt;</span>右浮动<span class="nt">&lt;/div&gt;</span><br>
+            <span class="nt">&lt;/div&gt;</span>
+            </code></pre></div>
+            <br>
+        </div>
+    </div>
+</body>
