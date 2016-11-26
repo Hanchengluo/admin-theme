@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>切换</title>
-    <link rel="stylesheet" type="text/css" href="../themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../themes/default/css/easyui-demo.css">
     <link rel="stylesheet" type="text/css" href="../themes/icon.css">
     <link rel="stylesheet" type="text/css" href="../css/css/easyui-demo.css">
-    <link rel="stylesheet" href="../css/css/main.css">
     <link rel="stylesheet" href="dome.css"></head>
-    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
     <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
 <body>
     <div class="container">
@@ -19,6 +18,7 @@
                 1、tabs控制是在easyui默认的tabs基础上新增皮肤样式实现的
                 <br>
                 2、使用建议：彩色tabs大多数情况下使用于顶部的一级切换功能，无色tabs大多是情况适用于页面存在二级切换的情况下的。
+                3、tabs总宽度使用百分比设置，会直接转化为px，不能实现百分比宽度效果。
             </code>
         </p>
         <h3>有色tabs</h3>
@@ -26,7 +26,7 @@
         <br>
         <div class="container-fluid">
             <div class="row">
-                <div class="easyui-tabs tab-colour" style="width:100%;height:100px;">
+                <div class="easyui-tabs tab-colour" style="height:100px;">
                     <div title="系统桌面" style="padding:10px">
                     </div>
                     <div title="徽章" data-options="closable:true"  style="padding:10px" class="body-box">
@@ -51,11 +51,11 @@
             </div>
         </div>
         <h3>无色tabs</h3>
-        <p>通过class类 .tab-tab-colourless 来控制easyui默认的边线改变外观。</p>
+        <p>通过class类 .tab-colourless 来控制easyui默认的边线改变外观。</p>
         <br>
         <div class="container-fluid">
             <div class="row">
-                <div class="easyui-tabs tab-colourless" style="width:100%;height:100px;">
+                <div class="easyui-tabs tab-colourless" style="height:100px;">
                     <div title="系统桌面" style="padding:10px">
                     </div>
                     <div title="徽章" data-options="closable:true"  style="padding:10px" class="body-box">
@@ -79,5 +79,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 </body>
+</html>

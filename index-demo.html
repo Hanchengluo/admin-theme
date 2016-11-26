@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <title>后台管理系统首页</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" type="text/css" href="themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="themes/default/css/easyui-demo.css">
     <link rel="stylesheet" type="text/css" href="themes/icon.css">
-    <link rel="stylesheet" href="css/css/main.css">
     <script type="text/javascript" src="jquery-1.8.3.js"></script>
     <script type="text/javascript" src="jquery.easyui.min.js"></script>
 </head>
-<body>
-    <div class="body-box" style="overflow:hidden;">
-        <div class="container-fluid">
-        <div class="navbar navbar-default">
+<body class="easyui-layout">
+	<div data-options="region:'north',border:false" style="height:77px;">
+		<div class="navbar navbar-default">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">
                     <img alt="Brand" src="images/icon-menu.png" height="18" width="26"></a>
@@ -75,10 +73,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="body-box">
-        <div id="body-layout" class="easyui-layout" style="width:100%;height:100%;">
-            <div data-options="region:'west',split:true" title="目录导航" style="width:180px;"  class="scrollbar">
+	</div>
+	<div data-options="region:'west',split:true" title="目录导航" style="width:180px;"  class="scrollbar">
                 <div id="" class="easyui-accordion sidemenu-left" style="width:172px;">
                     <div title="老人信息管理">
                         <ul id="tt1" class="easyui-tree">
@@ -162,67 +158,64 @@
                     </div>
                 </div>
             </div>
-            <div data-options="region:'center'" class="body-content body-box" style="margin-top: 10px;width:100%;">
-                <div class="easyui-tabs tab-colour" style="">
-                    <div title="系统桌面" style="padding:10px">
-                        <p style="font-size:14px">通过.tab-box 来控制easyui默认的边线问题</p>
-                        <ul>
-                            <li>easyui is a collection of user-interface plugin based on jQuery.</li>
-                            <li>easyui provides essential functionality for building modem, interactive, javascript  applications.</li>
-                            <li>using easyui you don't need to write many javascript code, you usually defines user-interface by writing some HTML markup.</li>
-                            <li>complete framework for HTML5 web page.</li>
-                            <li>easyui save your time and scales while developing your products.</li>
-                            <li>easyui is very easy but powerful.</li>
-                        </ul>
-                    </div>
-                    <div title="栅格布局" data-options="closable:true" style="padding:10px" class="body-box">
-                        <iframe src="dome/grid.html" width="100%" height="700px">
-                        </iframe>
-                    </div>
-                    <div title="表格" data-options="closable:true" style="padding:10px" class="body-box">
-                        <iframe src="dome/table.html" width="100%" height="700px">
-                        </iframe>
-                    </div>
-                    <div title="按钮" data-options="closable:true" style="padding:10px" class="body-box">
-                        <iframe src="dome/button.html" width="100%" height="700px">
-                        </iframe>
-                    </div>
-                    <div title="输入表单" data-options="closable:true" style="padding:10px" class="body-box">
-                        <iframe src="dome/input.html" width="100%" height="700px">
-                        </iframe>
-                    </div>
-                    <div title="徽章" data-options="closable:true"  style="padding:10px" class="body-box">
-                        <iframe src="dome/badge.html" width="100%" height="700px">
-                        </iframe>
-                    </div>
-                    <div title="文本排版" data-options="closable:true"  style="padding:10px" class="body-box">
-                        <iframe src="dome/text.html" width="100%" height="700px">
-                        </iframe>
-                    </div>
-                    <div title="文本标签" data-options="closable:true" style="padding:10px" class="body-box">
-                        <iframe src="dome/label.html" width="100%" height="700px">
-                        </iframe>
-                    </div>
-                    <div title="切换" data-options="closable:true"  style="padding:10px" class="body-box">
-                        <iframe src="dome/tabs.html" width="100%" height="700px">
-                        </iframe>
-                    </div>
-                    <div title="导航" data-options="closable:true" style="padding:10px" class="body-box">
-                        <iframe src="dome/nav.html" width="100%" height="700px">
-                        </iframe>
-                    </div>
-                    <div title="日历" data-options="closable:true" style="padding:10px" class="body-box">
-                        <iframe src="dome/calendar.html" width="100%" height="700px">
-                        </iframe>
-                    </div>
-                    <div title="弹窗" data-options="closable:true" style="padding:10px" class="body-box">
-                        <iframe src="dome/pop.html" width="100%" height="700px">
-                        </iframe>
-                    </div>
-                </div>
+    <div data-options="region:'center'" class="body-content body-box" style="margin-top: 10px;width:100%;">
+        <div class="easyui-tabs tab-colour" style="height:100%;height:700px;">
+            <div title="系统桌面" style="padding:10px">
+                <p style="font-size:14px">通过.tab-box 来控制easyui默认的边线问题</p>
+                <ul>
+                    <li>easyui is a collection of user-interface plugin based on jQuery.</li>
+                    <li>easyui provides essential functionality for building modem, interactive, javascript  applications.</li>
+                    <li>using easyui you don't need to write many javascript code, you usually defines user-interface by writing some HTML markup.</li>
+                    <li>complete framework for HTML5 web page.</li>
+                    <li>easyui save your time and scales while developing your products.</li>
+                    <li>easyui is very easy but powerful.</li>
+                </ul>
+            </div>
+            <div title="栅格布局" data-options="closable:true" style="padding:10px" class="body-box">
+                <iframe src="dome/grid.html" width="100%" height="700px">
+                </iframe>
+            </div>
+            <div title="表格" data-options="closable:true" style="padding:10px" class="body-box">
+                <iframe src="dome/table.html" width="100%" height="700px">
+                </iframe>
+            </div>
+            <div title="按钮" data-options="closable:true" style="padding:10px" class="body-box">
+                <iframe src="dome/button.html" width="100%" height="700px">
+                </iframe>
+            </div>
+            <div title="输入表单" data-options="closable:true" style="padding:10px" class="body-box">
+                <iframe src="dome/input.html" width="100%" height="700px">
+                </iframe>
+            </div>
+            <div title="徽章" data-options="closable:true"  style="padding:10px" class="body-box">
+                <iframe src="dome/badge.html" width="100%" height="700px">
+                </iframe>
+            </div>
+            <div title="文本排版" data-options="closable:true"  style="padding:10px" class="body-box">
+                <iframe src="dome/text.html" width="100%" height="700px">
+                </iframe>
+            </div>
+            <div title="文本标签" data-options="closable:true" style="padding:10px" class="body-box">
+                <iframe src="dome/label.html" width="100%" height="700px">
+                </iframe>
+            </div>
+            <div title="切换" data-options="closable:true"  style="padding:10px" class="body-box">
+                <iframe src="dome/tabs.html" width="100%" height="700px">
+                </iframe>
+            </div>
+            <div title="导航" data-options="closable:true" style="padding:10px" class="body-box">
+                <iframe src="dome/nav.html" width="100%" height="700px">
+                </iframe>
+            </div>
+            <div title="日历" data-options="closable:true" style="padding:10px" class="body-box">
+                <iframe src="dome/calendar.html" width="100%" height="700px">
+                </iframe>
+            </div>
+            <div title="弹窗" data-options="closable:true" style="padding:10px" class="body-box">
+                <iframe src="dome/pop.html" width="100%" height="700px">
+                </iframe>
             </div>
         </div>
-    </div>
     </div>
 </body>
 </html>

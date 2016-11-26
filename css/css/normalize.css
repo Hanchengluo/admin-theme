@@ -24,6 +24,12 @@ html {
  */
 body {
   margin: 0;
+  background: #ebeef0;
+}
+html,
+body,
+.body-box {
+  height: 100%;
 }
 /**
  * Add the correct display in IE 9-.
