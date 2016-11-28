@@ -2601,6 +2601,42 @@ table th[class*="col-"] {
   min-height: .01%;
   overflow-x: auto;
 }
+.table-info {
+  border: 1px solid #e6e6df;
+}
+.table-info > thead > tr > th,
+.table-info > tbody > tr > th,
+.table-info > tfoot > tr > th,
+.table-info > thead > tr > td,
+.table-info > tbody > tr > td,
+.table-info > tfoot > tr > td {
+  border: 1px solid #e6e6df;
+}
+.table-info > thead > tr > th {
+  background: #e6e6df;
+  color: #268e6b;
+  font-weight: bold;
+}
+.table-info > thead > tr > th,
+.table-info > thead > tr > td {
+  border-bottom-width: 2px;
+}
+.table-info > tbody > tr > td p.tit {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  line-height: 24px;
+  text-align: center;
+}
+.table-info > tbody > tr > td p.time {
+  font-size: 12px;
+  text-align: center;
+  color: #858585;
+}
+.table-info > tbody > tr > td .info > p {
+  text-indent: 28px;
+  line-height: 24px;
+}
 h1,
 h2,
 h3,

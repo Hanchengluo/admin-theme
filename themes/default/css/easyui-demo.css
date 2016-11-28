@@ -1,6 +1,6 @@
 .accordion {
   overflow: hidden;
-  border-width: 1px;
+  border-width: 0px;
   border-style: solid;
 }
 .accordion .accordion-header {
@@ -27,17 +27,16 @@
 }
 .accordion {
   background: #ffffff;
-  border-color: #95B8E7;
 }
 .accordion .accordion-header {
-  background: #E0ECFF;
+  background: #ffffff;
   filter: none;
 }
 .accordion .accordion-header-selected {
-  background: #FBEC88;
+  background: #ffffff;
 }
 .accordion .accordion-header-selected .panel-title {
-  color: #000000;
+  color: #268e6b;
 }
 .calendar {
   border-width: 1px;
@@ -822,22 +821,22 @@
   background-color: #aac5e7;
 }
 .layout-split-north {
-  border-bottom: 5px solid #E6EEF8;
+  border-bottom: 5px solid #ebeef0;
 }
 .layout-split-south {
-  border-top: 5px solid #E6EEF8;
+  border-top: 5px solid #ebeef0;
 }
 .layout-split-east {
-  border-left: 5px solid #E6EEF8;
+  border-left: 5px solid #ebeef0;
 }
 .layout-split-west {
-  border-right: 5px solid #E6EEF8;
+  border-right: 5px solid #ebeef0;
 }
 .layout-expand {
-  background-color: #E0ECFF;
+  background-color: #f2f1eb;
 }
 .layout-expand-over {
-  background-color: #E0ECFF;
+  background-color: #f2f1eb;
 }
 a.l-btn {
   background-position: right 0;
@@ -1221,7 +1220,7 @@ a.m-btn-plain-active {
   border-style: solid;
 }
 .panel-header {
-  padding: 5px;
+  padding: 8px 5px;
   position: relative;
 }
 .panel-title {
@@ -1294,7 +1293,7 @@ a.m-btn-plain-active {
   background: url('images/loading.gif') no-repeat 10px 10px;
 }
 .panel-tool-close {
-  background: url('images/panel_tools.png') no-repeat -16px 0px;
+  background: url('images/ic-popclose.png') no-repeat center center;
 }
 .panel-tool-min {
   background: url('images/panel_tools.png') no-repeat 0px 0px;
@@ -1313,16 +1312,10 @@ a.m-btn-plain-active {
 }
 .panel-header,
 .panel-body {
-  border-color: #95B8E7;
+  border-color: #ddd;
 }
 .panel-header {
-  background-color: #E0ECFF;
-  background: -webkit-linear-gradient(top, #eff5ff 0, #e0ecff 100%);
-  background: -moz-linear-gradient(top, #eff5ff 0, #e0ecff 100%);
-  background: -o-linear-gradient(top, #eff5ff 0, #e0ecff 100%);
-  background: linear-gradient(to bottom, #eff5ff 0, #e0ecff 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#eff5ff, endColorstr=#e0ecff, GradientType=0);
+  background-color: #fff;
 }
 .panel-body {
   background-color: #ffffff;
@@ -1332,7 +1325,7 @@ a.m-btn-plain-active {
 .panel-title {
   font-size: 12px;
   font-weight: bold;
-  color: #0E2D5F;
+  color: #474a54;
   height: 16px;
   line-height: 16px;
 }
@@ -1992,10 +1985,10 @@ a.s-btn-plain-active {
   background: transparent;
 }
 .tabs-scroller-left {
-  background: #e0ecff url('../images/tabs_icons.png') no-repeat 1px center;
+  background: #ffffff url('../images/tabs_icons.png') no-repeat 1px center;
 }
 .tabs-scroller-right {
-  background: #e0ecff url('../images/tabs_icons.png') no-repeat -15px center;
+  background: #ffffff url('../images/tabs_icons.png') no-repeat -15px center;
 }
 .tabs li a.tabs-close {
   background: url('../images/tabs_icons.png') no-repeat -34px center;
@@ -2374,6 +2367,7 @@ a.s-btn-plain-active {
   height: 18px;
   white-space: nowrap;
   cursor: pointer;
+  padding: 8px 0;
 }
 .tree-hit {
   cursor: pointer;
@@ -2389,9 +2383,6 @@ a.s-btn-plain-active {
   height: 18px;
   vertical-align: top;
   overflow: hidden;
-}
-.tree-expanded {
-  background: url('images/tree_icons.png') no-repeat -18px 0px;
 }
 .tree-expanded-hover {
   background: url('images/tree_icons.png') no-repeat -50px 0px;
@@ -2457,6 +2448,7 @@ a.s-btn-plain-active {
   padding: 0 2px;
   height: 18px;
   line-height: 18px;
+  color: #474a54;
 }
 .tree-node-proxy {
   font-size: 12px;
@@ -2511,8 +2503,9 @@ a.s-btn-plain-active {
   color: #000000;
 }
 .tree-node-selected {
-  background: #FBEC88;
-  color: #000000;
+  background: #ffffff;
+  font-weight: bold;
+  border-left: 2px solid #26d192;
 }
 .validatebox-invalid {
   background-image: url('images/validatebox_warning.png');
@@ -2748,4 +2741,16 @@ a.s-btn-plain-active {
   border-color: #268E6B;
   color: #FFFFFF;
   background: #268E6B;
+}
+iframe {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
