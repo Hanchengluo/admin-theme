@@ -1,0 +1,61 @@
+.login {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: url(../../update/admin_loginbg.png) center center no-repeat;
+  background-size: 100% auto;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../update/admin_loginbg.png', sizingMethod='scale');
+}
+.logobox {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  opacity: 0.8;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  height: 100px;
+}
+.logobox img {
+  display: block;
+  margin: 18px auto;
+}
+.loginbox {
+  display: block;
+  overflow: hidden;
+  width: 400px;
+  height: 370px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #ddd\9;
+  -moz-box-shadow: 0 1px 8px #aaa;
+  box-shadow: 0 1px 8px #aaa;
+  margin: 80px auto;
+}
+.loginbox .color-border {
+  display: block;
+  overflow: hidden;
+  height: 4px;
+}
+.loginbox .color-border span {
+  display: inline-block;
+  width: 80px;
+  height: 4px;
+  float: left;
+  overflow: hidden;
+}
+.loginbox .color-border span.blue {
+  background: #00b9e5;
+}
+.loginbox .color-border span.red {
+  background: #f33155;
+}
+.loginbox .color-border span.orange {
+  background: #ea7758;
+}
+.loginbox .color-border span.green {
+  background: #26d192;
+}
+.loginbox .color-border span.yellow {
+  background: #f4c014;
+}

@@ -3039,3 +3039,128 @@ hr.border {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.selectbox-h {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+.selectbox-h .btn {
+  padding: 0 6px;
+  font-size: 12px;
+}
+.selectbox-h .title {
+  display: block;
+  overflow: hidden;
+  padding: 8px 0;
+  margin: 0 8px;
+  border-bottom: 1px solid #1ebd83;
+}
+.selectbox-h .title h3 {
+  display: block;
+  overflow: inline-hidden;
+  float: left;
+  background: url(../../images/searchtit.png) left center no-repeat;
+  padding-left: 16px;
+  font-size: 14px;
+  margin: 0 auto;
+  line-height: 28px;
+}
+.selectbox-h .title .selectbtn {
+  display: inline-block;
+  overflow: hidden;
+  float: right;
+}
+.selectbox-h .info {
+  padding: 0px 8px;
+}
+.selectbox-h .info table {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding-top: 8px;
+}
+.selectbox-h .info td {
+  list-style-type: none;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  font-size: 12px;
+}
+.selectbox-h .info td .border-g {
+  border: 1px solid #75d4b0;
+}
+.selectbox-h .info td .w100 {
+  width: 100px;
+}
+.selectbox-h .info td .col-lv {
+  color: #268e6b;
+}
+.selectbox-s {
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  max-width: 200px;
+  border: 1px solid #ddd;
+  padding-bottom: 8px;
+  position: relative;
+}
+.selectbox-s .btn {
+  padding: 0 6px;
+  font-size: 12px;
+}
+.selectbox-s .w50 {
+  width: 48%;
+}
+.selectbox-s .title {
+  display: block;
+  overflow: hidden;
+  padding: 8px 0;
+  margin: 0 8px;
+  border-bottom: 1px solid #1ebd83;
+}
+.selectbox-s .title h3 {
+  display: block;
+  overflow: inline-hidden;
+  float: left;
+  background: url(../../images/searchtit.png) left center no-repeat;
+  padding-left: 16px;
+  font-size: 14px;
+  margin: 0 auto;
+  line-height: 28px;
+}
+.selectbox-s .info {
+  display: block;
+  overflow: hidden;
+  padding: 8px;
+}
+.selectbox-s .info table {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.selectbox-s .info td {
+  list-style-type: none;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  font-size: 12px;
+}
+.selectbox-s .info td .border-g {
+  border: 1px solid #75d4b0;
+}
+.selectbox-s .info td .w70 {
+  width: 70px;
+}
+.selectbox-s .info td .w100 {
+  width: 100%;
+}
+.selectbox-s .info td .col-lv {
+  color: #268e6b;
+}
+.selectbox-s .selectbtn {
+  display: block;
+  overflow: hidden;
+  padding: 0 12px;
+  position: flexed;
+  bottom: 0;
+}

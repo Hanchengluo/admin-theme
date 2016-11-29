@@ -280,7 +280,7 @@
   background-color: #ffffff;
 }
 .combo {
-  border-color: #95B8E7;
+  border-color: #75d4b0;
   background-color: #ffffff;
 }
 .combo-arrow {
@@ -2742,6 +2742,7 @@ a.s-btn-plain-active {
   color: #FFFFFF;
   background: #268E6B;
 }
+ul,
 iframe {
   display: block;
   padding: 0;
