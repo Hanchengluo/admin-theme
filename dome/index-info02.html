@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/xml; charset=utf-8" />
+    <title>筛选搜索</title>
+    <link rel="stylesheet" type="text/css" href="../themes/default/css/easyui-demo.css">
+    <link rel="stylesheet" type="text/css" href="../themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/css/easyui-demo.css">
+    <link rel="stylesheet" href="../css/css/default.css">
+    <link rel="stylesheet" href="../css/css/button.css">
+    <link rel="stylesheet" href="../css/css/selectbox.css">
+    <link rel="stylesheet" href="../css/css/table.css">
+    <link rel="stylesheet" href="dome.css">
+    <script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script> 
+    <script type="text/JavaScript" src="../othercontrol/My97DatePicker/WdatePicker.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row" style="margin: 8px;">
+            <div class="selectbox-s" style="width:22%;">
+                <div class="title">
+                    <h3 class="">筛选条件</h3>
+                </div>
+                <div class="info">
+                    <table>
+                        <tr>
+                            <td><input class="easyui-validatebox border-g" type="text" name="name" data-options="required:false" placeholder="老人名称/编号"></input></td>
+                        </tr>
+                        <tr>
+                            <td><input class="easyui-datebox" value="选择服务时间" data-options="width:170" border="0"></input></td>
+                        </tr>
+                        <tr>
+                            <td>实际开始时间：</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input title="入职日期的开始时间" id="EntryDate_Start" type="text"  onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})"  name="EntryDate_Start" class="border-g w70"/>  到 
+                                <input title="入职日期的开始时间" id="EntryDate_Start" type="text"  onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})"  name="EntryDate_Start" class="border-g w70"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>实际结束时间：</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input title="入职日期的开始时间" id="EntryDate_Start" type="text"  onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})"  name="EntryDate_Start" class="border-g w70"/>  到 
+                                <input title="入职日期的开始时间" id="EntryDate_Start" type="text"  onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})"  name="EntryDate_Start" class="border-g w70"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>服务地点：</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-success">点击选择</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>工作项：</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-success">全部节点</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="selectbtn">
+                    <button type="button" class="w50 btn btn-warning">入住办理</button>
+                    <button type="button" class="w50 btn btn-success">查询</button>
+                </div>
+            </div>
+            <div class="" style="float:right;width:77%;" >
+                <table class="table table-bordered table-condensed" border="0">
+                  <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>老人</th>
+                        <th>服务地点</th>
+                        <th>工作项</th>
+                        <th>指定时间</th>
+                        <th>实际时间</th>
+                        <th>当前状态</th>
+                        <th>工作人员</th>
+                        <th>操作</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td rowspan="2">1</td>
+                        <td>李星星</td>
+                        <td>明星楼>楼层1>101>101-1</td>
+                        <td>巡房</td>
+                        <td>2016/10/29-2016/10/31</td>
+                        <td>2016/10/29</td>
+                        <td>待完成</td>
+                        <td>黎原</td>
+                        <td>
+                            <a class="btn btn-success btn-sm" href="">员工完成</a>
+                            <a class="btn btn-danger btn-sm" href="">取消</a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>李星星</td>
+                        <td>明星楼>楼层1>101>101-1</td>
+                        <td>巡房</td>
+                        <td>2016/10/29-2016/10/31</td>
+                        <td>2016/10/29</td>
+                        <td>待完成</td>
+                        <td>黎原</td>
+                        <td>
+                            <a class="btn btn-success btn-sm" href="">员工完成</a>
+                            <a class="btn btn-danger btn-sm" href="">取消</a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>李星星</td>
+                        <td>明星楼>楼层1>101>101-1</td>
+                        <td>巡房</td>
+                        <td>2016/10/29-2016/10/31</td>
+                        <td>2016/10/29</td>
+                        <td>待完成</td>
+                        <td>黎原</td>
+                        <td>
+                            <a class="btn btn-success btn-sm" href="">员工完成</a>
+                            <a class="btn btn-danger btn-sm" href="">取消</a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>总计：3列</td>
+                      <td  colspan="3"></td>
+                      <td class="text-right" colspan="4">当前第1/1605页 共16048条记录(第1到第10条记录)</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+// placeholder兼容问题
+var doc = window.document, input = doc.createElement('input');
+if( typeof input['placeholder'] == 'undefined' )
+{
+    $('input').each(function( ele )
+    {
+        var me = $(this);
+        var ph = me.attr('placeholder');
+        if( ph && !me.val() )
+        {
+            me.val(ph).css('color', '#aaa').css('line-height', me.css('height'));
+        }
+        me.on('focus', function()
+        {
+            if( me.val() === ph)
+            {
+                me.val(null).css('color', '');
+            }
+        }).on('blur', function()
+        {
+            if( !me.val() )
+            {
+                me.val(ph).css('color', '#aaa').css('line-height', me.css('height'));
+            }
+        });
+    });
+}
+</script>
+</html>

@@ -63,10 +63,11 @@
 	display: block;
 	overflow: hidden;
 	height: 100%;
-	max-width: 200px;
 	border: 1px solid #ddd;
+	min-width: 200px;
 	padding-bottom: 8px;
 	position: relative;
+	float: left;
 	.btn{
 		padding: 0 6px;
 		font-size: 12px;
@@ -126,7 +127,47 @@
 		display: block;
 		overflow: hidden;
 		padding: 0 12px;
-		position: flexed;
 		bottom: 0;
+	}
+}
+
+.headphoto{
+	display: block;
+	overflow: hidden;
+	position: relative;
+	width: 200px;
+	height: auto;
+	img{
+		width: 100%;
+		vertical-align: top;
+	}
+	.filename{
+		display: block;
+		overflow: hidden;
+		background: #000;
+		width: 100%;
+		opacity: .8;
+		position: absolute;
+		bottom: 0;
+		padding: 8px 0;
+		p.name{
+			display: block;
+			margin: 0 4px;
+			color: #fff;
+			float: left;
+			width: 164px;
+			overflow: hidden;
+			white-space: normal;
+			word-wrap: break-word;
+			word-break: normal;
+		}
+		a{
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			margin-right: 4px;
+			float: right;
+			background: url(../../themes/images/btn-picdel.png) center center no-repeat;
+		}
 	}
 }

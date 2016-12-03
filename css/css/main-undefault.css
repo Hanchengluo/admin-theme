@@ -976,6 +976,22 @@ fieldset[disabled] .btn {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.btn.cancel {
+  cursor: auto;
+}
+.btn.cancel:hover {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn.cancel > a {
+  width: 10px;
+  display: inline-block;
+  margin-left: 4px;
+}
+.btn.cancel > a img {
+  line-height: 1.42857143;
+}
 .btn-default {
   color: #333333;
   background-color: #ffffff;
@@ -2459,6 +2475,7 @@ th {
 }
 .table-bordered {
   border: 1px solid #e6e6df;
+  border-collapse: collapse;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
