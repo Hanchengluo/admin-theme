@@ -1,0 +1,26 @@
+#body-layout .panel-header,
+#body-layout .panel-body {
+  border-color: #ddd;
+}
+#body-layout .panel-header {
+  background: #fff;
+  padding: 10px 5px;
+}
+#body-layout .panel-header .panel-title {
+  color: #474a54;
+}
+#body-layout .accordion-header-selected .panel-title {
+  color: #26d192;
+}
+#body-layout .easyui-accordion {
+  border: none;
+}
+#body-layout .layout-expand .panel-body {
+  background: #26D192;
+}
+#body-layout .body-content.panel-body {
+  border: none;
+}
+.body-content .panel-body {
+  border: none;
+}

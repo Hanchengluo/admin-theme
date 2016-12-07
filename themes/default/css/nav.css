@@ -1,6 +1,10 @@
 .navbar {
   margin-left: -15px;
   margin-right: -15px;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 .navbar-default {
   background-color: #26d192;
@@ -14,9 +18,23 @@
 .navbar-brand {
   float: left;
   height: 66px;
-  padding: 15px 15px;
+  padding: 0 15px;
   font-size: 18px;
-  line-height: 42px;
+  line-height: 74px;
+}
+.navbar-logo {
+  float: left;
+  width: 160px;
+  height: 74px;
+  padding: 0 15px;
+  line-height: 74px;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+}
+.navbar-logo img {
+  width: 86%;
+  vertical-align: middle;
 }
 .navbar-collapse {
   padding-right: 15px;
@@ -37,6 +55,8 @@
 .nav {
   display: inline-block;
   float: left;
+  padding: 0;
+  margin: 0;
 }
 .navbar-nav > li {
   display: inline-block;
@@ -133,4 +153,12 @@
   border-color: #268E6B;
   color: #FFFFFF;
   background: #268E6B;
+}
+.nav-float-right {
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 999;
 }

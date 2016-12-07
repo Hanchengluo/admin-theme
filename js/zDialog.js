@@ -4,7 +4,7 @@
  * QQ：4845587 E-mail:wzh@wangzhaohui.com
  * 最后修正：2009-12-18
  **/
-var IMAGESPATH = '/othercontrol/zDialog/images/'; //图片路径配置
+var IMAGESPATH = '/images/'; //图片路径配置
 //var IMAGESPATH = 'http://www.5-studio.com/wp-content/uploads/2009/11/'; //图片路径配置
 /*************************一些公用方法和属性****************************/
 var isIE = navigator.userAgent.indexOf('MSIE') != -1;
@@ -227,13 +227,13 @@ Dialog.prototype.create = function () {
     var html = '\
   <table id="_DialogTable_' + this.ID + '" width="' + (this.Width + 26) + '" cellspacing="0" cellpadding="0" border="0" onselectstart="return false;" style="-moz-user-select: none; font-size:12px; line-height:1.4;">\
     <tr id="_Draghandle_' + this.ID + '" style="' + (this.Drag ? "cursor: move;" : "") + '">\
-      <td width="13" height="33" style="background-image: url(' + IMAGESPATH + 'dialog_lt.png) !important;background: url(' + IMAGESPATH + 'dialog_lt.gif) no-repeat 0 0;"><div style="width: 13px;"></div></td>\
-      <td height="33" style="background-image:url(' + IMAGESPATH + 'dialog_ct.png) !important;background: url(' + IMAGESPATH + 'dialog_ct.gif) repeat-x top;"><div style="padding: 9px 0 0 4px; float: left; font-weight: bold; color:#fff;"><img align="absmiddle" src="' + IMAGESPATH + 'icon_dialog.gif"/><span id="_Title_' + this.ID + '">' + this.Title + '</span></div>\
-        <div onclick="Dialog.getInstance(\'' + this.ID + '\').cancelButton.onclick.apply(Dialog.getInstance(\'' + this.ID + '\').cancelButton,[]);" onmouseout="this.style.backgroundImage=\'url(' + IMAGESPATH + 'dialog_closebtn.gif)\'" onmouseover="this.style.backgroundImage=\'url(' + IMAGESPATH + 'dialog_closebtn_over.gif)\'" style="margin: 3px 0 0; position: relative; cursor: pointer; float: right; height: 17px; width: 28px; background-image: url(' + IMAGESPATH + 'dialog_closebtn.gif);' + (this.ShowCloseButton ? "" : "display:none;") + '"></div></td>\
-      <td width="13" height="33" style="background-image: url(' + IMAGESPATH + 'dialog_rt.png) !important;background: url(' + IMAGESPATH + 'dialog_rt.gif) no-repeat right 0;"><div style="width: 13px;"><a id="_forTab_' + this.ID + '" href="#;"></a></div></td>\
+      <td width="12" height="31" style="background-image: url(' + IMAGESPATH + 'dialog_lt.png) !important;background: url(' + IMAGESPATH + 'dialog_lt.gif) no-repeat 0 0;"><div style="width: 12px;"></div></td>\
+      <td height="31" style="background-image:url(' + IMAGESPATH + 'dialog_ct.png) !important;background: url(' + IMAGESPATH + 'dialog_ct.gif) repeat-x top;"><div style="padding: 7px 0 0 4px; float: left; font-weight: bold; color:#268e6b;"><img align="absmiddle" src="' + IMAGESPATH + 'icon_dialog.gif"/><span id="_Title_' + this.ID + '">' + this.Title + '</span></div>\
+        <div onclick="Dialog.getInstance(\'' + this.ID + '\').cancelButton.onclick.apply(Dialog.getInstance(\'' + this.ID + '\').cancelButton,[]);" onmouseout="this.style.backgroundImage=\'url(' + IMAGESPATH + 'dialog_closebtn.gif)\'" onmouseover="this.style.backgroundImage=\'url(' + IMAGESPATH + 'dialog_closebtn_over.gif)\'" style="margin: 6px 0 0; position: relative; cursor: pointer; float: right; height: 17px; width: 28px; background-image: url(' + IMAGESPATH + 'dialog_closebtn.gif);' + (this.ShowCloseButton ? "" : "display:none;") + '"></div></td>\
+      <td width="12" height="31" style="background-image: url(' + IMAGESPATH + 'dialog_rt.png) !important;background: url(' + IMAGESPATH + 'dialog_rt.gif) no-repeat right 0;"><div style="width: 12px;"><a id="_forTab_' + this.ID + '" href="#;"></a></div></td>\
     </tr>\
     <tr valign="top">\
-      <td width="13" style="background-image: url(' + IMAGESPATH + 'dialog_mlm.png) !important;background: url(' + IMAGESPATH + 'dialog_mlm.gif) repeat-y left;"></td>\
+      <td width="12" style="background-image: url(' + IMAGESPATH + 'dialog_mlm.png) !important;background: url(' + IMAGESPATH + 'dialog_mlm.gif) repeat-y left;"></td>\
       <td align="center"><table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff">\
           <tr id="_MessageRow_' + this.ID + '" style="' + (this.ShowMessageRow ? "" : "display:none") + '">\
             <td valign="top" height="50"><table width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#eaece9 url(' + IMAGESPATH + 'dialog_bg.jpg) no-repeat scroll right top;" id="_MessageTable_' + this.ID + '">\
@@ -261,12 +261,12 @@ Dialog.prototype.create = function () {
               </div></td>\
           </tr>\
         </table></td>\
-      <td width="13" style="background-image: url(' + IMAGESPATH + 'dialog_mrm.png) !important;background: url(' + IMAGESPATH + 'dialog_mrm.gif) repeat-y right;"></td>\
+      <td width="12" style="background-image: url(' + IMAGESPATH + 'dialog_mrm.png) !important;background: url(' + IMAGESPATH + 'dialog_mrm.gif) repeat-y right;"></td>\
     </tr>\
     <tr>\
-      <td width="13" height="13" style="background-image: url(' + IMAGESPATH + 'dialog_lb.png) !important;background: url(' + IMAGESPATH + 'dialog_lb.gif) no-repeat 0 bottom;"></td>\
+      <td width="12" height="12" style="background-image: url(' + IMAGESPATH + 'dialog_lb.png) !important;background: url(' + IMAGESPATH + 'dialog_lb.gif) no-repeat 0 bottom;"></td>\
       <td style="background-image: url(' + IMAGESPATH + 'dialog_cb.png) !important;background: url(' + IMAGESPATH + 'dialog_cb.gif) repeat-x bottom;"></td>\
-      <td width="13" height="13" style="background-image: url(' + IMAGESPATH + 'dialog_rb.png) !important;background: url(' + IMAGESPATH + 'dialog_rb.gif) no-repeat right bottom;"><a onfocus=\'$id("_forTab_' + this.ID + '").focus();\' href="#;"></a></td>\
+      <td width="12" height="12" style="background-image: url(' + IMAGESPATH + 'dialog_rb.png) !important;background: url(' + IMAGESPATH + 'dialog_rb.gif) no-repeat right bottom;"><a onfocus=\'$id("_forTab_' + this.ID + '").focus();\' href="#;"></a></td>\
     </tr>\
   </table>\
 </div>\
