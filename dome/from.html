@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../themes/default/css/easyui-demo.css">
     <link rel="stylesheet" type="text/css" href="../themes/icon.css">
     <link rel="stylesheet" type="text/css" href="../css/css/easyui-demo.css">
-    <!-- <link rel="stylesheet" href="../css/css/default.css"> -->
+    <link rel="stylesheet" href="../css/css/default.css">
     <link rel="stylesheet" href="../css/css/button.css">
     <link rel="stylesheet" href="../css/css/selectbox.css">
     <link rel="stylesheet" href="../css/css/table.css">
@@ -16,6 +16,11 @@
     <script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
     <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
     <script type="text/JavaScript" src="../othercontrol/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript"> 
+    $(function(){ 
+        var $browsers = $("input[name=browser]");
+    });
+    </script>
 </head>
 <body style="padding:0;">
     <div class="">
@@ -25,7 +30,7 @@
                 <span>您现在所在位置是：</span><a href="##" class="link">信息中心</a><a href="##" class="link">-><span>员工实际工作任务列表管理</span></a><a href="##" class="link active">-><span>员工实际工作任务列表</span></a>
             </div>
             <div class="frombox">
-                <table border="0" style="width:100%;"  class="table table-bordered table-condensed">
+                <table border="0" style="width:100%;"  class="table table-bordered table-condensed formtable">
                     <thead>
                         <tr>
                             <th colspan="4">修改我的信息</th>
@@ -33,7 +38,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td rowspan="6" width="20%">照片：</td>
+                            <td rowspan="6" width="20%" class="tablename">照片：</td>
                             <td rowspan="6" width="20%">
                                 <div style="">
                                     <div class="headphoto">
@@ -47,44 +52,44 @@
                                     </div>
                                 </div>
                             </td>
-                            <td>职工姓名：</td>
-                            <td><input type="text"><span>*</span></td>
+                            <td class="tablename">职工姓名：</td>
+                            <td class="tabletxt"><input type="text"><span class="warn">*</span></td>
                         </tr>
                         <tr>
-                            <td>职工工号：</td>
-                            <td><input type="text"><span>*</span></td>
+                            <td class="tablename">职工工号：</td>
+                            <td class="tabletxt"><input type="text"><span class="warn">*</span></td>
                         </tr>
                         <tr>
-                            <td>职工档案号：</td>
-                            <td><input type="text"><span>*</span></td>
+                            <td class="tablename">职工档案号：</td>
+                            <td class="tabletxt"><input type="text"><span class="warn">*</span></td>
                         </tr>
                         <tr>
-                            <td>部门：</td>
-                            <td>友好机构</td>
+                            <td class="tablename">部门：</td>
+                            <td class="tabletxt">友好机构</td>
                         </tr>
                         <tr>
-                            <td>入职日期：</td>
-                            <td>2015-06-18</td>
+                            <td class="tablename">入职日期：</td>
+                            <td class="tabletxt">2015-06-18</td>
                         </tr>
                         <tr>
-                            <td>职位：</td>
-                            <td>院长</td>
+                            <td class="tablename">职位：</td>
+                            <td class="tabletxt">院长</td>
                         </tr>
                         <tr>
-                            <td>性别：</td>
-                            <td>
-                                <input type="radio">
-                                <label>男</label>
-                                <input type="radio">
-                                <label>女</label>
-                                <span>*</span>
+                            <td class="tablename">性别：</td>
+                            <td class="tabletxt">
+                                <input type="radio" name="browser">
+                                <label for="male">男</label>
+                                <input type="radio" name="browser">
+                                <label for="female">女</label>
+                                <span class="warn">*</span>
                             </td>
-                            <td>出生年月日：</td>
-                            <td><input type="text" value="2015年08月01日"></td>
+                            <td class="tablename">出生年月日：</td>
+                            <td class="tabletxt"><input id="d122" type="text" onClick="WdatePicker()"/></td>
                         </tr>
                         <tr>
-                            <td>血型：</td>
-                            <td>
+                            <td class="tablename">血型：</td>
+                            <td class="tabletxt">
                                 <select name="bloodtype" id="">
                                     <option value="===请选择===">===请选择===</option>
                                     <option value="A型">A型</option>
@@ -92,42 +97,42 @@
                                     <option value="B型">B型</option>
                                 </select>
                             </td>
-                            <td>民族：</td>
-                            <td>汉</td>
+                            <td class="tablename">民族：</td>
+                            <td class="tabletxt">汉</td>
                         </tr>
                         <tr>
-                            <td>身份证号码：</td>
-                            <td>44150219930811****</td>
-                            <td>户口所在地：</td>
-                            <td>广州白云区</td>
+                            <td class="tablename">身份证号码：</td>
+                            <td class="tabletxt">44150219930811****</td>
+                            <td class="tablename">户口所在地：</td>
+                            <td class="tabletxt">广州白云区</td>
                         </tr>
                         <tr>
-                            <td>现住地址：</td>
-                            <td>天津市</td>
-                            <td>邮编：</td>
-                            <td>516600</td>
+                            <td class="tablename">现住地址：</td>
+                            <td class="tabletxt">天津市</td>
+                            <td class="tablename">邮编：</td>
+                            <td class="tabletxt">516600</td>
                         </tr>
                         <tr>
-                            <td>药物反应：</td>
-                            <td colspan="3"><textarea name="" id="" cols="80" rows="10"></textarea></td>
+                            <td class="tablename">药物反应：</td>
+                            <td class="tabletxt" colspan="3"><textarea name="" id="" cols="80" rows="10"></textarea></td>
                         </tr>
                         <tr>
-                            <td>档案资料：</td>
-                            <td></td>
-                            <td>电话：</td>
-                            <td><span href="#" class="btn btn-default cancel" role="button">18402003361<a href="javascript:void(0)"><img src="../themes/images/btn-cancel.png" alt=""></a></span></td>
+                            <td class="tablename">档案资料：</td>
+                            <td class="tabletxt"></td>
+                            <td class="tablename">电话：</td>
+                            <td class="tabletxt"><span href="#" class="btn btn-default cancel" role="button">18402003361<a href="javascript:void(0)"><img src="../themes/images/btn-cancel.png" alt=""></a></span></td>
                         </tr>
                         <tr>
-                            <td>婚姻情况：</td>
-                            <td>已婚</td>
-                            <td>健康情况：</td>
-                            <td>良好</td>
+                            <td class="tablename">婚姻情况：</td>
+                            <td class="tabletxt">已婚</td>
+                            <td class="tablename">健康情况：</td>
+                            <td class="tabletxt">良好</td>
                         </tr>
                         <tr>
-                            <td>档案资料：</td>
-                            <td></td>
-                            <td>QQ：</td>
-                            <td>741962291</td>
+                            <td class="tablename">档案资料：</td>
+                            <td class="tabletxt"></td>
+                            <td class="tablename">QQ：</td>
+                            <td class="tabletxt">741962291</td>
                         </tr>
                     </tbody>
                 </table>

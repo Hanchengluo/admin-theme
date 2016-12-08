@@ -2,3 +2,64 @@
   display: block;
   overflow: hidden;
 }
+.formtable {
+  font-size: 12px;
+}
+.formtable td {
+  vertical-align: middle !important;
+}
+.formtable .tablename {
+  padding-left: 8px;
+}
+.formtable .tabletxt {
+  padding-left: 8px;
+}
+.formtable .tabletxt input[type="text"] {
+  border: 1px solid #75d4b0;
+  outline: none;
+  padding-left: 4px;
+  height: 20px;
+}
+.formtable .tabletxt input[type="radio"] {
+  vertical-align: middle;
+  margin: 0 4px;
+}
+.formtable .tabletxt label[for="male"] {
+  vertical-align: middle;
+}
+.formtable .tabletxt span.warn {
+  color: red;
+  margin-left: 8px;
+}
+.formtable .tabletxt textarea {
+  border: 1px solid #75d4b0;
+  outline: none;
+  padding-left: 8px;
+}
+.formtable .tabletxt select {
+  border: 1px solid #75d4b0;
+  color: #268e6b;
+  outline: none;
+  height: 20px;
+}
+#_Button_0_next {
+  border-radius: 4px;
+  background: #00b9e5;
+  border: 1px solid #296abd;
+  color: #fff;
+  padding: 4px 8px;
+}
+#_ButtonOK_0 {
+  border-radius: 4px;
+  background: #fe9003;
+  border: 1px solid #ea7758;
+  color: #fff;
+  padding: 4px 8px;
+}
+#_ButtonCancel_0 {
+  border-radius: 4px;
+  background: #ea7758;
+  border: 1px solid #f33155;
+  color: #fff;
+  padding: 4px 8px;
+}
